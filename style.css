@@ -17,7 +17,13 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+     
 }
+     
+     
+
+
 #nav1{
     flex-basis: 50%;
     display: flex;
@@ -85,26 +91,28 @@ nav{
     gap: 1.1rem;
 }
 
-
-
-
-
 /* ! HEADER */
 header {
+
   padding: 5rem 0;
   height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 13rem;
+ 
+  
 }
 
 #banner-container {
   height: 450px;
-  width: 1000px;
+  width: 835px;
+  
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   overflow: hidden;
+  
 }
 
 #banner-container > img {
@@ -139,7 +147,7 @@ header {
   height: 400px;
   display: flex;
   flex-direction: column;
-  padding: 0 18rem;
+  padding: 0 10rem;
 }
 #category-title {
   flex-basis: 15%;
@@ -147,6 +155,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left:2.4rem;
 }
 
 #category-items {
@@ -154,6 +163,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   align-items: center;
 }
 .category-card {
@@ -166,6 +177,19 @@ header {
   align-items: center;
 }
 
+#category-items > .category-card:nth-child(4n + 1) > .category-img {
+  background-color: rgba(255, 0, 0, 0.348);
+}
+#category-items > .category-card:nth-child(4n + 2) > .category-img {
+  background-color: rgba(0, 128, 0, 0.257);
+}
+#category-items > .category-card:nth-child(4n + 3) > .category-img {
+  background-color: rgba(0, 0, 255, 0.119);
+}
+#category-items > .category-card:nth-child(4n + 4) > .category-img {
+  background-color: rgba(255, 255, 0, 0.345);
+}
+
 .category-img {
   height: 3.5rem;
   width: 3.5rem;
@@ -173,11 +197,81 @@ header {
   justify-content: center;
   align-items: center;
   border-radius:10px;
+  border-radius: 10px;
   background-color: #ff0000;
+}
+.category-img>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .category-name {
   font-size: 0.66rem;
   font-weight: 600;
   text-align: center;
   word-break: break-all;
+}
+
+/* ! HIGHLIGHTS */
+#highlights {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.highlight-container {
+  height: 7rem;
+  width: 12.4rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.8rem;
+}
+.one {
+  background-color: rgb(243, 232, 255);
+}
+.two {
+  background-color: rgb(254, 249, 194);
+}
+.three {
+  background-color: rgb(219, 252, 231);
+}
+.four {
+  background-color: rgb(252, 231, 243);
+}
+.highlight-icon {
+  font-size: 1.8rem;
+}
+.highlight-title {
+  font-weight: 600;
+}
+.highlight-description {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+/* !FOOTER */
+footer {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.449);
+  background-color: rgb(253, 253, 253);
+}
+
+footer > h2 {
+  color: rgb(96, 8, 198);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+footer > p {
+  font-size: 1rem;
 }
