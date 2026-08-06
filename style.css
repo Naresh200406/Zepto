@@ -18,6 +18,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     position: fixed;
+     z-index:1000;
      
 }
      
@@ -91,6 +92,7 @@ nav{
     gap: 1.1rem;
 }
 
+
 /* ! HEADER */
 header {
 
@@ -100,7 +102,7 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 13rem;
- 
+ /* margin: 0 auto; */
   
 }
 
@@ -112,6 +114,8 @@ header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   overflow: hidden;
+  
+  
   
 }
 

@@ -1,0 +1,23 @@
+CartItems=[
+    {
+        id:1,
+        title:product.title,
+        qty:2,
+        price:product.price,
+        img:product.thumbnail
+    },
+     {
+        id:2,
+        title:product.title,
+        qty:3,
+        price:product.price,
+        img:product.thumbnail
+    },
+     {
+        id:3,
+        title:product.title,
+        qty:1,
+        price:product.price,
+        img:product.thumbnail
+    }
+]
